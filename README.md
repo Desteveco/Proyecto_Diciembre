@@ -1,80 +1,140 @@
 # Desteveco Spotify
 ## Indice
+
 1. [Introducción](#introducción)
-2. [Clockify](#clockify)
-3. [Diagrama De Componentes](#diagrama-de-componentes)
-4. [Arquitectura De La Aplicación](#arquitectura-de-la-aplicación)
-5. [Tecnologías Utilizadas](#tecnologuías-utilizadas)
-6. [Instrucciones De Instalación](#instrucciones-de-instalación)
-7. [Instrucciones De Uso](#instrucciones-de-uso)
-8. [Dificultades Y Mejoras](#dificultades-y-mejoras)
-9. [Menciones Honorificas](#menciones-honorificas)
+2. [Pequeña descripción del proyecto](#pequeña-descripción-del-proyecto)
+3. [Pre-requisitos](#pre-requisitos)   
+4. [Cómo se instala](#cómo-se-instala) 
+5. [Cómo se usa](#cómo-se-usa) 
+6. [Arquitectura de la aplicación](#arquitectura-de-la-aplicación)   
+7. [Explicar el planteamiento de la aplicación](#explicar-el-planteamiento-de-la-aplicación)
+8. [Tecnologías utilizadas](#tecnologías-utilizadas)
+9. [Conclusiones](#conclusiones)
+10. [Posibles mejoras](#posibles-mejoras)
+11. [Dificultades](#dificultades)
+12. [Menciones Honoríficas](#menciones-honoríficas)
 
+## Introducción 
 
-rthfbg
+Este proyecto es un proyecto realizado como metodo de evaluacion del primer trimestre de 1º DAM en la asignatura de Programacion
 
-## Introducción
-Breve introducción al proyecto.
+### Pequeña descripción del proyecto 
 
-
-### Diagrama de Componentes
-![Diagrama de Componenetes](./Diagrama_de_Componentes.jpg)
-
-### Descripción del proyecto
-Pequeña descripción de lo que hace el proyecto.
-
-### Atribución al profesor
-Reconocimiento al profesor o cualquier otra atribución necesaria.
+El proyecto consiste en la produccion de un codigo en python que reconozca y abra un archivo .xspf, aleatorice las canciones que haya en el y lo abra como una playlist en VLC. Para esto usaremos los recursos dados en clase y facilitados por nuestro profesor [David Gelpi](#)
 
 ## Manual
-Pasos para la instalación y uso del proyecto.
 
-### Pre-requisitos
-- Python 3.12
-- Git 2.43
-- Visual Studio Code
+### Pre-requisitos y dependencias                                  
+1. python 3.12
+2. git 2.43
+3. Vs code
+4. pip 23.3.1
+5. pytest 7.4.3
+6. iniconfig 2.0.0
+7. colorama 0.4.6
+8. pluggy 1.3.0
+9. somepackage 1.2.
+10. setuptools 65.5.0
+11. coverage   7.3.2 
+12. packaging  23.2 
 
-Asegúrate de tener VLC instalado en tu sistema.
+### Cómo se instala 
 
-### Instalación
-Pasos para instalar el proyecto.
+1. Posiciónate en la ubicación donde desees crear la aplicación:
 
-### Uso
-Instrucciones sobre cómo utilizar el proyecto.
+```bash
+$ cd C:\Users\nombredeusuario\Escritorio
+```
+2. Crea un nuevo directorio para la aplicacion:
 
-## Metodología
-Detalles sobre la metodología utilizada.
+```bash
+$ mkdir DirectorioX
+```
 
-### Ramas utilizadas
-Número y nombre de las ramas usadas.
+3. Cambia la ruta a la del directorio que acabas de crear
 
-### Descripción de cada rama
-Explicación de lo que se hace en cada rama.
+```bash
+$ cd DirectorioX
+```
+4. Instala `python`, `pip3` y `git`:
 
-## Descripción Técnica
-Detalles técnicos del proyecto.
+Puedes usar este enlace oficial si no tienes `Python` (https://www.python.org/downloads/). Cuando lo tengas comprueba que te añadio tambien `pip` con el comando:
 
-### Planteamiento de la aplicación
-Explicación del enfoque general de la aplicación.
+```bash
+$ pip --version
+```
+En caso de que no lo tengas por defecto:
 
-### Arquitectura de la aplicación
-Diagrama de componentes o arquitectura de la aplicación.
+```bash
+$ python -m pip install
+```
 
-### Componentes y responsabilidades
-Descripción de los componentes principales y sus responsabilidades.
+Ahora instala `git` y comprueba que lo tienes:
 
-### Esquema de datos
-Ejemplo del esquema de datos utilizado en el proyecto.
+```bash
+$ pip install git
+$ git --version
+```
 
-## Pruebas
-Ejemplo de ejecución correcta del programa.
+5. clona el proyecto en el directorio
 
-## Coverage
-Resultados del test de cobertura.
+```bash
+$ git clone https://github.com/Desteveco/Proyecto_Diciembre.git
+```
 
-## Clockify (Opcional)
-Detalle del tiempo invertido en el proyecto.
+6. Instala las dependencias requeridas con anterioridad en [Pre-requisitos y dependencias](#pre-requisitos-y-dependencias):
 
-## Conclusiones
-- Posibles mejoras.
-- Dificultades encontradas.
+## Instrucciones de uso
+
+Lo primero sera asegurarnos de que tenemos la musica descargada en una carpeta. Seleccionamos la carpeta con la musica y creamos con vlc un archivo .xspf de la carpeta
+- Desde el cmd:
+
+1. Dirigete al direcotorio `Proyecto_Diciembre`
+
+```bash
+$ cd C:\.. ..\Proyecto_Diciembre
+```
+
+2. Ejecuta la app con `python3`
+
+```bash
+$ python3 app.py
+```
+
+3. Te pedirá la ruta de tu archivo xspf y en el caso de que no tengas el VLC en el directorio por defecto, tambien la ruta al VLC.
+
+4. La app te devolverá mensajes en el caso de que alguna de tus canciones no tengan el formato establecido (`.mp3`)
+
+## Tecnologuías utilizadas
+
+- Lenguaje de Programación:
+* `Python`
+* Librerías de `Python`:
++ random: Para la aleatorización del orden de las canciones.
++ Subprocess: Para abrir `VLC` y pasarle las rutas de las canciones.
++ os: Para comprobar las rutas y los archivos del sistema
+- Manipulación de Archivos:
+- Reproducción de Música:
+* `VLC`: Reproductor multimedia.
+* `XSPF` (XML Shareable Playlist Format): Formato de archivo utilizado para definir listas de reproducción.
+
+## Dificultades y mejoras
+
+1. `Conventional Commits`:
+
+- Considero que necesitaba mas soltura a la hora de lanzarme a un proyecto con esta herramienta sin saber utilizarla bien y ha sido todo un desafio constante.
+
+2. `Codigo en general`:
+
+- Los nombres de las variables y el codigo son muy mejorables y esta a la espera de una segunda version en la que se unifiquen las variables entre distintos modulos para hacerlo mas manejable y y facilitar la comprension
+
+3. `git`:
+
+- Al igual que con los commits, necesito mas soltura con esta herramienta ya que entre versiones he perdido muchos commits, que estaba creando en otras ramas sin saberlo, y la forma de solucionarlo fue eliminando todas. Por esa razon no hay en este proyecto un desarrollo del modelo de ramas de git ni versionado, aunque si existia.
+
+
+## Menciones Honorificas
+- Referencias a todo aquel que influyó en la creacion del proyecto
+1. [dfleta](https://github.com/dfleta/kata_tdd_pytest)
+2. [Samuel H Altman y Elon Musk](https://openai.com/)
+4. [programing5393](https://www.youtube.com/@programming5393)
