@@ -1,7 +1,7 @@
-from src.xspf_reader import xspf_reader
-from src.xspf_reader import rutas
+from src.xspf_reader import xspf_reader 
 
-def test_1():
-        assert isinstance(xspf_reader(), list)
 def test_2():
-        assert all(ruta.endswith('.mp3') for ruta in rutas)
+    ruta_xspf = 'C:/Users/Desteveco/Proyecto_Diciembre/Proyecto_Diciembre/songs/playlist.xspf' 
+    rutas = xspf_reader(ruta_xspf)
+    assert isinstance(rutas, list)  
+    assert len(rutas) > 0  

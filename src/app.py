@@ -2,7 +2,7 @@ from xspf_reader import xspf_reader
 from aleatorizador import lista_aleatoria
 from play_random_music import vlc_opener
 import os
-ruta_xspf = 'C:/Users/Desteveco/Proyecto_Diciembre/Proembre/songs/playlist.xspf'
+ruta_xspf = 'C:/Users/Desteveco/Proyecto_Diciembre/Proyecto_Diciembre/songs/playlist.xspf'
 ruta_vlc = 'C:/Program Files/VideoLAN/VLC/vlc.exe'
 def rutas_checker():
     global ruta_xspf, ruta_vlc
