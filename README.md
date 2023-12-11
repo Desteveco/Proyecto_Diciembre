@@ -103,7 +103,7 @@ $ python3 app.py
 4. La app te devolverá mensajes en el caso de que alguna de tus canciones no tengan el formato establecido (`.mp3`)
 
 ## Arquitectura de la aplicacion
-[Diagrama]](./Diagrama_de_Componentes.jpg)
+![Diagrama](./Diagrama_de_Componentes.jpg)
 
 ## Tecnologuías utilizadas
 
