@@ -6,7 +6,7 @@
 3. [Pre-requisitos y dependencias](#pre-requisitos-y-dependencias)   
 4. [Cómo se instala](#cómo-se-instala) 
 5. [Cómo se usa](#instrucciones-de-uso) 
-6. [Arquitectura de la aplicación](#arquitectura-de-la-aplicación)   
+6. [Arquitectura de la aplicación](#arquitectura-de-la-aplicacion)   
 7. [Tecnologías utilizadas](#tecnologías-utilizadas)
 8. [Posibles mejoras y dificultades](#dificultades-y-mejoras)
 9. [Menciones Honoríficas](#menciones-honoríficas)
