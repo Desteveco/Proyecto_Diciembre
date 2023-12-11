@@ -12,5 +12,3 @@ def xspf_reader():
                 else:
                     print(f"Mi programa codeado en una semana y media no admite otros archivos que no sean .mp3, asi que tu archivo '{ruta}' no estara en la playlist, lo siento :D")
     return rutas
-# hola joel
-
