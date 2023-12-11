@@ -3,16 +3,13 @@
 
 1. [Introducción](#introducción)
 2. [Pequeña descripción del proyecto](#pequeña-descripción-del-proyecto)
-3. [Pre-requisitos](#pre-requisitos)   
+3. [Pre-requisitos y dependencias](#pre-requisitos-y-dependencias)   
 4. [Cómo se instala](#cómo-se-instala) 
-5. [Cómo se usa](#cómo-se-usa) 
+5. [Cómo se usa](#instrucciones-de-uso) 
 6. [Arquitectura de la aplicación](#arquitectura-de-la-aplicación)   
-7. [Explicar el planteamiento de la aplicación](#explicar-el-planteamiento-de-la-aplicación)
-8. [Tecnologías utilizadas](#tecnologías-utilizadas)
-9. [Conclusiones](#conclusiones)
-10. [Posibles mejoras](#posibles-mejoras)
-11. [Dificultades](#dificultades)
-12. [Menciones Honoríficas](#menciones-honoríficas)
+7. [Tecnologías utilizadas](#tecnologías-utilizadas)
+8. [Posibles mejoras y dificultades](#dificultades-y-mejoras)
+9. [Menciones Honoríficas](#menciones-honoríficas)
 
 ## Introducción 
 
@@ -104,6 +101,8 @@ $ python3 app.py
 3. Te pedirá la ruta de tu archivo xspf y en el caso de que no tengas el VLC en el directorio por defecto, tambien la ruta al VLC.
 
 4. La app te devolverá mensajes en el caso de que alguna de tus canciones no tengan el formato establecido (`.mp3`)
+
+## [Arquitectura de la aplicacion](../Diagrama_de_Componentes.jpg)
 
 ## Tecnologuías utilizadas
 
