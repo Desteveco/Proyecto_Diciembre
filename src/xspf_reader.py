@@ -1,6 +1,6 @@
-rutas = []
-def xspf_reader():
-    with open('C:/Users/Desteveco/Proyecto_Diciembre/Proyecto_Diciembre/songs/playlist.xspf') as archivo_xspf:
+def xspf_reader(ruta_xspf):
+    rutas = []
+    with open(ruta_xspf) as archivo_xspf:
         contenido = archivo_xspf.readlines()
         for linea in contenido:
             if '<location>' in linea:

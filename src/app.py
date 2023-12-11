@@ -1,11 +1,9 @@
-import os
 from xspf_reader import xspf_reader
 from aleatorizador import lista_aleatoria
 from play_random_music import vlc_opener
-
-ruta_xspf = 'C:/Users/Desteveco/Proyecto_Diciembre/Proyecto_Diciembre/songs/playlist.xspf'
+import os
+ruta_xspf = 'C:/Users/Desteveco/Proyecto_Diciembre/Proembre/songs/playlist.xspf'
 ruta_vlc = 'C:/Program Files/VideoLAN/VLC/vlc.exe'
-
 def rutas_checker():
     global ruta_xspf, ruta_vlc
     if not os.path.exists(ruta_xspf):
@@ -20,6 +18,6 @@ def rutas_checker():
         if os.path.exists(nueva_ruta_vlc):
             ruta_vlc = nueva_ruta_vlc
 rutas_checker()
-rutas_musica = xspf_reader()
+rutas_musica = xspf_reader(ruta_xspf)
 playlist = lista_aleatoria(rutas_musica)
 vlc_opener(playlist, ruta_vlc) 
